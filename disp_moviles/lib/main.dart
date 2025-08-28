@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:logger/logger.dart';
 
 void main() {
   runApp(const MyApp());
 }
+
+var logger = Logger();
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+    logger.d("Logger is working!");
     return MaterialApp(
       title: '2021479005',
       theme: ThemeData(
@@ -54,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     
-
+    logger.d("Logger is working!");
 
     return Scaffold(
       appBar: AppBar(
@@ -70,6 +74,17 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter veces',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            Image.asset('assets/image/Pixel-Art-Hot-Pepper-2-1.webp'),
+            Image.asset('assets/image/Pixel-ArtPizza-2.webp'),
+            Image.asset('assets/image/Pixel-Art-Watermelon-3.webp'),
+            /*Row(
+              
+              children: <Widget>[
+                Image.asset('assets/image/Pixel-Art-Hot-Pepper-2-1.webp'),
+                Image.asset('assets/image/Pixel-ArtPizza-2.webp'),
+                Image.asset('assets/image/Pixel-Art-Watermelon-3.webp'),
+              ],
+            ),*/
           ],
         ),
       ),
