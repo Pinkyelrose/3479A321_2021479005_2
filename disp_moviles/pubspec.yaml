@@ -64,6 +64,11 @@ flutter:
      - assets/images/Pixel-Art-Pizza-2.webp
      - assets/images/Pixel-Art-Watermelon-3.webp
 
+  fonts:
+    - family: GoogleFonts
+      fonts:
+        - asset: assets/fonts/Oswald-VariableFont_wght.ttf
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
